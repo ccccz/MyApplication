@@ -1,18 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cz.myapplication.MainActivity">
+    tools:context="com.example.cz.myapplication.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#83af9b"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The first task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#c8c8a9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The second task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#f9cdaf"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The third task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#fc9d9a"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The forth task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#c8c8a9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The second task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#f9cdaf"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="The third task"
+                        android:gravity="center_vertical"
+                        android:textSize="35dp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#81c7d4"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/text_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="+"
+            android:textSize="80dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>
